@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect }from 'react';
 
 
 const Home = (props) => {
 
-  
+const [userHits, setHits] = useState({
+  hits: null
+});
+  useEffect(() => {
+  setHits({
+    hits:props.pageData
+  })
+  window.sessionStorage.setItem("hits", props.pageData);
+
+}, []);
 
   const pageListData = props.pageData.map(function (listing, index) {
         return (
