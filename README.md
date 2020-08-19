@@ -12,3 +12,4 @@ Enable Server-Side Rendering Node JS React
 Todo
  - save data to browser storage
  - CI CD and deployment
+ - Test not added yet
